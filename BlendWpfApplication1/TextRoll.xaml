@@ -1,0 +1,54 @@
+﻿<Window x:Class="BlendWpfApplication1.TextRoll"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TextRoll" Height="586" Width="1027">
+    
+    <!--<Window.Resources>
+        <Storyboard x:Key="Textroll">
+            <DoubleAnimation From="0" To="-500" Duration="0:0:3"
+                                        RepeatBehavior="Forever"
+                                        Storyboard.TargetName="textBorder" 
+                                        Storyboard.TargetProperty="RenderTransform.Y" />
+        </Storyboard>
+    </Window.Resources>
+    
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource Textroll}"/>
+        </EventTrigger>
+    </Window.Triggers>-->
+    <Grid>
+
+        <!--<Border Height="62" Width="955" BorderBrush="Black" BorderThickness="1" Name="textBorder">    
+            <Border.RenderTransform>
+                <TranslateTransform Y="0" />
+            </Border.RenderTransform>
+            <TextBlock Text="Your Next Great MVC App Starts Here
+Get started today and download your 30-day trial of DevExpress MVC Extensions (includes 30 days of free technical support).
+All demos ship with full source code and are included in the DevExpress MVC distribution. Refer to the Demos and Sample Applications topic to learn more.
+DevExpress MVC Extensions ship as part of DevExpress Universal, DXperience and ASP.NET Subscriptions and are backed by a 60 day unconditional money-back guarantee.
+To learn more and obtain pricing information, visit the Compare Features and Pricing webpage. For immediate assistance, contact us by Email at info@devexpress.com or by phone at +1 (818) 844-3383 between 7:30am and 4:30pm Pacific Time."   FontSize="20" FontFamily="Adobe 黑体 Std" TextWrapping="Wrap"  Width="855" />
+        </Border>-->
+
+        <Canvas VerticalAlignment="Top" Height="26" ClipToBounds="True" Margin="0,138,0,0">
+            <StackPanel Name="content1">
+                <StackPanel.RenderTransform>
+                    <TranslateTransform X="0" />
+                </StackPanel.RenderTransform>
+                <TextBlock FontSize="20" Foreground="Green" Text="Your Next Great MVC App Starts Here. All demos ship with full source code and are iss MVC distribution. Refer to the Demos and Sample Applications topic to learn more." />
+            </StackPanel>
+            <Canvas.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation From="0" To="-800" Duration="0:0:13"
+                                        RepeatBehavior="Forever"
+                                        Storyboard.TargetName="content1" 
+                                        Storyboard.TargetProperty="RenderTransform.X" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Canvas.Triggers>
+        </Canvas>
+    </Grid>
+</Window>

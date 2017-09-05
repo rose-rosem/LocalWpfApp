@@ -1,0 +1,19 @@
+﻿<!--
+      *********    请勿修改此文件     *********
+      此文件由设计工具再生成。更改
+      此文件可能会导致错误。
+-->
+<SampleData:SampleDataSource xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.SampleDataSource">
+	<SampleData:SampleDataSource.Collection>
+		<SampleData:Item Property1="SampleDataSource_Files\1.jpg"/>
+		<SampleData:Item Property1="SampleDataSource_Files\2.jpg"/>
+		<SampleData:Item Property1="SampleDataSource_Files\3.jpg"/>
+		<SampleData:Item Property1="SampleDataSource_Files\1.jpg"/>
+		<SampleData:Item Property1="SampleDataSource_Files\2.jpg"/>
+		<SampleData:Item Property1="SampleDataSource_Files\3.jpg"/>
+		<SampleData:Item Property1="SampleDataSource_Files\1.jpg"/>
+		<SampleData:Item Property1="SampleDataSource_Files\2.jpg"/>
+		<SampleData:Item Property1="SampleDataSource_Files\3.jpg"/>
+		<SampleData:Item Property1="SampleDataSource_Files\1.jpg"/>
+	</SampleData:SampleDataSource.Collection>
+</SampleData:SampleDataSource>

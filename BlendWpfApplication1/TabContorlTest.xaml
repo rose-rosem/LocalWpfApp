@@ -1,0 +1,11 @@
+﻿<Window x:Class="BlendWpfApplication1.TabContorlTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TabContorlTest" Height="500" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Border BorderThickness="3" BorderBrush="Red" Name="content">
+            
+        </Border>
+        
+    </Grid>
+</Window>

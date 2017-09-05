@@ -1,0 +1,86 @@
+﻿<Window x:Class="BlendWpfApplication1.index"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="index" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" Width="1280" Height="800" AllowsTransparency="True" Loaded="Window_Loaded">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary2.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="img/bg.png" />
+        </Grid.Background>
+        <StackPanel Orientation="Horizontal"  Margin="996,29,153,735" Height="38">
+            <ProgressBar VerticalAlignment="Center"   Name="wifiProgressBar"  Style="{StaticResource wifi}" Maximum="35"/>
+            <Grid Margin="10,0,0,0">
+                <ProgressBar  Name="batteryPowerProgressBar" Style="{StaticResource battery}"  Maximum="100" />
+                <Grid Margin="8,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                    <Image Source="img/battery2.png" Height="38" Name="battery" ></Image>
+                    <TextBlock Text="20%" HorizontalAlignment="Right"  VerticalAlignment="Center" Foreground="#e2574c" Margin="0,0,18,0" FontWeight="Bold" Name="batterypercentage"></TextBlock>
+                </Grid>
+            </Grid>
+        </StackPanel>
+
+
+
+        <Button Margin="800,19,400,729" Cursor="Hand" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <RotateTransform x:Name="trans" Angle="0"/>
+            </Button.RenderTransform>
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="Button.Click">
+                    <BeginStoryboard >
+                        <Storyboard>
+                            <DoubleAnimation From="0" To="360" RepeatBehavior="1x" Duration="0:0:3"
+                                             Storyboard.TargetName="trans"
+                                             Storyboard.TargetProperty="Angle"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
+            <Button.Template>
+                <ControlTemplate>
+                    <Grid>
+                        <Image Source="img/xin.png" HorizontalAlignment="Left"></Image>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        
+        <Button Margin="883,19,317,729">
+            <Button.Template>
+                <ControlTemplate>
+                    <Grid >
+                        <Button >
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Image Source="img/xin.png" HorizontalAlignment="Left"></Image>
+                                </ControlTemplate>
+                            </Button.Template>
+                            <Button.RenderTransform>
+                                <RotateTransform x:Name="trans" Angle="0"/>
+                            </Button.RenderTransform>
+                            <Button.Triggers>
+                                <EventTrigger RoutedEvent="Button.Click">
+                                    <BeginStoryboard >
+                                        <Storyboard>
+                                            <DoubleAnimation From="0" To="360" RepeatBehavior="1x" Duration="0:0:3"
+                                             Storyboard.TargetName="trans"
+                                             Storyboard.TargetProperty="Angle"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </Button.Triggers>
+                        </Button>
+                        <TextBlock Text="刷新" Foreground="#d4237a" FontSize="16" HorizontalAlignment="Right" Margin="0,2,2,0"></TextBlock>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</Window>
