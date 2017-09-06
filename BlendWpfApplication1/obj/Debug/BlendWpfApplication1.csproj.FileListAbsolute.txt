@@ -93,3 +93,6 @@ D:\zq\WpfApplication\BlendWpfApplication\BlendWpfApplication1\BlendWpfApplicatio
 D:\zq\WpfApplication\BlendWpfApplication\BlendWpfApplication1\BlendWpfApplication1\obj\Debug\TextRoll.g.cs
 D:\zq\WpfApplication\BlendWpfApplication\BlendWpfApplication1\BlendWpfApplication1\obj\Debug\ScreenLight.baml
 D:\zq\WpfApplication\BlendWpfApplication\BlendWpfApplication1\BlendWpfApplication1\obj\Debug\ScreenLight.g.cs
+D:\plkjgit\LocalWpfApp\BlendWpfApplication1\bin\Debug\BlendWpfApplication1.exe.config
+D:\plkjgit\LocalWpfApp\BlendWpfApplication1\obj\Debug\BlendWpfApplication1.exe
+D:\plkjgit\LocalWpfApp\BlendWpfApplication1\obj\Debug\BlendWpfApplication1.pdb
