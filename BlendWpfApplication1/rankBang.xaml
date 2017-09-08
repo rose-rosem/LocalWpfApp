@@ -150,7 +150,7 @@
                     <StackPanel>
                         <Border BorderThickness="0,0,0,1" BorderBrush="#ccc" Height="60" Margin="0,20" HorizontalAlignment="Center">
                             <StackPanel Orientation="Horizontal" Margin="0,5">
-                                <Image Source="img/people.png"></Image>
+                                <Image Source="img1/people.png"></Image>
                                 <TextBlock Text="培洛科技员工表" FontSize="28" FontFamily="楷体" VerticalAlignment="Center" Margin="15,0,0,0" ></TextBlock>
                             </StackPanel>
                         </Border>

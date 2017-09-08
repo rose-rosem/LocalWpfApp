@@ -40,7 +40,7 @@
 
         <Grid Grid.Column="1">
             <Grid.Background>
-                <ImageBrush ImageSource="img/watch5.png"></ImageBrush>
+                <ImageBrush ImageSource="img1/watch5.png"></ImageBrush>
             </Grid.Background>
             <Grid Height="477" Width="754" VerticalAlignment="Bottom" Margin="83,0,87,83">
                 <Grid.RowDefinitions>
