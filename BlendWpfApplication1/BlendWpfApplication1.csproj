@@ -300,6 +300,7 @@
     <Resource Include="img1\btnlottery.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="img\lean.png" />
     <Resource Include="img\close1.png" />
     <Resource Include="img\light.png" />
     <Resource Include="img\voice.png" />

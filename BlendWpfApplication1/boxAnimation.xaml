@@ -162,6 +162,24 @@
 
         <PathGeometry x:Key="path" Figures="M0,0 C0,0 3,134 130,133 C257,132 313,-4 478,47 C643,98 714,109 807,91 C900,73 961,-2 1108,52 C1255,106 1301,130 1424,94" />
 
+        <PathGeometry x:Key="path1" Figures="M880,100 L880,5.5" />
+
+
+        <Storyboard x:Key="Storyboard4">
+            <!--<MatrixAnimationUsingPath PathGeometry="{StaticResource path1}"
+                                          Storyboard.TargetName="coinMatrix"
+                                          Storyboard.TargetProperty="Matrix"
+                                          DoesRotateWithTangent="False"
+                                          Duration="0:0:1"/>-->
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cointextblock" Storyboard.TargetProperty="Opacity">
+                <LinearDoubleKeyFrame KeyTime="0" Value="1" />
+                <LinearDoubleKeyFrame KeyTime="0:0:1" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetName="cointextblock" Storyboard.TargetProperty="FontSize">
+                <LinearDoubleKeyFrame KeyTime="0" Value="16" />
+                <LinearDoubleKeyFrame KeyTime="0:0:2" Value="13" />
+            </DoubleAnimationUsingKeyFrames>-->
+        </Storyboard>
 
         <Storyboard x:Key="Storyboard3">
             <MatrixAnimationUsingPath PathGeometry="{StaticResource path}"
@@ -261,7 +279,7 @@
         <EventTrigger RoutedEvent="FrameworkElement.Loaded">
             <!--<BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>-->
             <!--<BeginStoryboard Storyboard="{StaticResource Storyboard2}"/>-->
-            <BeginStoryboard Storyboard="{StaticResource Storyboard3}"/>
+            <BeginStoryboard Storyboard="{StaticResource Storyboard4}"/>
         </EventTrigger>
     </Window.Triggers>
 
@@ -273,10 +291,10 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="img/bg.png" />
+            <ImageBrush ImageSource="img/lean.png" />
         </Grid.Background>
 
-        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Height="149" Width="776">
+        <!--<Grid HorizontalAlignment="Left" VerticalAlignment="Top" Height="149" Width="776">
             <StackPanel Orientation="Horizontal">
                 <Grid>
                     <Image Source="img/guang2.png" Margin="210,10,0,0" Height="150" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" x:Name="img1">
@@ -293,10 +311,14 @@
 
             </StackPanel>
         </Grid>
+        -->
         <!--宝箱区域-->
+        <!--
         <StackPanel x:Name="rewardBox"  HorizontalAlignment="Left" VerticalAlignment="Top" >
 
-            <!--宝箱图片-->
+            -->
+        <!--宝箱图片-->
+        <!--
             <Grid Height="119">
 
                 <StackPanel Orientation="Horizontal">
@@ -323,9 +345,11 @@
                                 </ControlTemplate>
                             </Button.Template>
                         </Button>
-                        <!--<Border Name="borderRewardBox1Opened" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,28,0,0">
+                        -->
+        <!--<Border Name="borderRewardBox1Opened" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,28,0,0">
                             <Image Source="img/flag.png" Width="30"></Image>
                         </Border>-->
+        <!--
                     </Grid>
                     <Grid Width="100" Margin="112,0,0,0">
                         <Button Cursor="Hand" x:Name="btnReward2" IsEnabled="False" VerticalAlignment="Bottom" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5">
@@ -343,9 +367,11 @@
                                 </ControlTemplate>
                             </Button.Template>
                         </Button>
-                        <!--<Border Name="borderRewardBox2Opened" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,28,0,0">
+                        -->
+        <!--<Border Name="borderRewardBox2Opened" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,28,0,0">
                             <Image Source="img/flag.png" Width="30"></Image>
                         </Border>-->
+        <!--
                     </Grid>
                     <Grid Width="100" Margin="112,0,0,0">
                         <Button Cursor="Hand" x:Name="btnReward3" IsEnabled="False" VerticalAlignment="Bottom" HorizontalAlignment="Left">
@@ -355,14 +381,18 @@
                                 </ControlTemplate>
                             </Button.Template>
                         </Button>
-                        <!--<Border Name="borderRewardBox3Opened" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,28,0,0">
+                        -->
+        <!--<Border Name="borderRewardBox3Opened" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,28,0,0">
                             <Image Source="img/flag.png" Width="30"></Image>
                         </Border>-->
+        <!--
                     </Grid>
                 </StackPanel>
 
 
-                <!--tips 图片-->
+                -->
+        <!--tips 图片-->
+        <!--
                 <Image Source="img/qiantip1.png" Width="178" x:Name="tip1" Margin="20,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
                     <Image.Effect>
                         <DropShadowEffect Direction="0" BlurRadius="3" ShadowDepth="0"/>
@@ -370,11 +400,15 @@
                 </Image>
             </Grid>
 
-            <!--进度条-->
+            -->
+        <!--进度条-->
+        <!--
             <ProgressBar Value="{Binding Percent, Mode=OneWay}" Style="{StaticResource SimpleProgressBar}" x:Name="progressRewardBox" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="646" Height="15"
 				Foreground="{StaticResource IndicatorBackground}" Margin="85,0,0,0"/>
 
-            <!--下面数字-->
+            -->
+        <!--下面数字-->
+        <!--
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="签到" Margin="90,0,0,0" FontSize="16"  FontFamily="黑体" FontWeight="Medium" />
                 <TextBlock Text="90" Margin="166,0,0,0" FontSize="16"  FontFamily="Adobe 黑体 Std" FontWeight="Medium"/>
@@ -382,10 +416,10 @@
                 <TextBlock Text="270" Margin="186,0,0,0" FontSize="16" FontFamily="Adobe 黑体 Std" FontWeight="Medium"/>
             </StackPanel>
 
-        </StackPanel>
+        </StackPanel>-->
 
 
-        <Rectangle Fill="#474749" Opacity=".7"/>
+        <!--<Rectangle Fill="#474749" Opacity=".7"/>-->
         <!--<Grid x:Name="box1" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center">
 			<Grid.RenderTransform>
 				<TransformGroup>
@@ -429,7 +463,7 @@
             </Image>
         </Canvas>-->
 
-        <Canvas >
+        <!--<Canvas >
 
             <Path Data="{StaticResource path}"/>
 
@@ -472,7 +506,17 @@
         <Grid Name="grid33">
             <TextBlock Text="恭喜你获得了30颗钻石   引起火热目光" Foreground="#fff" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,130"></TextBlock>
             <Button Content="确定领取" Width="100" Height="50" Margin="0,230,30,0"></Button>
-        </Grid>
+        </Grid>-->
+        <Canvas>
+            <Path Data="{StaticResource path1}"  />
 
+            <TextBlock Text="-80 钻石 -21 金币" Width="80" TextWrapping="Wrap"  LineHeight="27" Foreground="Red" Name="cointextblock" RenderTransformOrigin="0.5,0.5" FontSize="16" Margin="850,65,0,0" FontWeight="Bold">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Canvas>
     </Grid>
 </Window>
