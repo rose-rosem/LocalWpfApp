@@ -69,6 +69,9 @@
     <Compile Include="boxAnimation.xaml.cs">
       <DependentUpon>boxAnimation.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BoxAnimation1.xaml.cs">
+      <DependentUpon>BoxAnimation1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ExpanderTest1.xaml.cs">
       <DependentUpon>ExpanderTest1.xaml</DependentUpon>
     </Compile>
@@ -127,6 +130,10 @@
       <DependentUpon>截屏.xaml</DependentUpon>
     </Compile>
     <Page Include="boxAnimation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BoxAnimation1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -300,6 +307,11 @@
     <Resource Include="img1\btnlottery.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="img1\diamond.png" />
+    <Resource Include="img1\hotairballoon.png" />
+    <Resource Include="img1\surebtn.png" />
+    <Resource Include="img\chest.png" />
+    <Resource Include="img\chest2.png" />
     <Resource Include="img\lean.png" />
     <Resource Include="img\close1.png" />
     <Resource Include="img\light.png" />

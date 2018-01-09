@@ -176,3 +176,5 @@ D:\plkjgit\LocalWpfApp\BlendWpfApplication1\obj\Debug\UserControl1.baml
 D:\plkjgit\LocalWpfApp\BlendWpfApplication1\obj\Debug\BlendWpfApplication1.g.resources
 D:\plkjgit\LocalWpfApp\BlendWpfApplication1\obj\Debug\BlendWpfApplication1.Properties.Resources.resources
 D:\plkjgit\LocalWpfApp\BlendWpfApplication1\obj\Debug\BlendWpfApplication1.csproj.GenerateResource.Cache
+D:\plkjgit\LocalWpfApp\BlendWpfApplication1\obj\Debug\BoxAnimation1.baml
+D:\plkjgit\LocalWpfApp\BlendWpfApplication1\obj\Debug\BoxAnimation1.g.cs
